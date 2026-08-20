@@ -1,0 +1,14 @@
+.heute-archiv{padding:clamp(4rem,8vw,7rem) 0}
+.calendar-nav{display:flex;align-items:center;justify-content:space-between;max-width:700px;margin:auto}
+.calendar-nav h1{font-size:clamp(2rem,5vw,4rem);font-weight:400;text-transform:capitalize}
+.calendar-nav button,.calendar-day{border:0;background:transparent;font:inherit}
+.calendar-nav button{font-size:1.8rem;cursor:pointer}
+.calendar-head,.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);max-width:700px;margin:auto;text-align:center}
+.calendar-head{font:650 .75rem system-ui;text-transform:uppercase;letter-spacing:.08em;margin-top:2rem}
+.calendar-head span,.calendar-day{padding:1rem}
+.has-entry{cursor:pointer;font-weight:bold}
+.has-entry i{display:block;width:6px;height:6px;background:#ad9560;border-radius:50%;margin:.35rem auto 0}
+.calendar-entry{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:900px;margin:5rem auto 0;padding-top:4rem;border-top:1px solid #d7d4ce;font:1rem/1.7 system-ui}
+.calendar-entry img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:.55rem}
+.calendar-entry h2{font:400 clamp(2rem,4vw,3rem) Georgia;margin:.4rem 0 1rem}
+@media(max-width:800px){.calendar-entry{grid-template-columns:1fr}.calendar-head span,.calendar-day{padding:.65rem .25rem}}
